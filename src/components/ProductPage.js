@@ -1,5 +1,6 @@
 import ProductCard from './ProductCard';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import LineChart from './LineChart';
 
 export default function ProductPage({ product, setSelectedProductID }) {
   return (
@@ -66,6 +67,7 @@ export default function ProductPage({ product, setSelectedProductID }) {
             <p className="bg-content/20 w-full p-2 text-lg text-content">
               Charts
             </p>
+            <LineChart />
           </TabPanel>
           <TabPanel>2</TabPanel>
           <TabPanel>3</TabPanel>
